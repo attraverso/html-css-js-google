@@ -4,6 +4,29 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: #1A0DAB;
+}
+
+a.btn.btn-jumbo {
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  color:
+}
+
+a.btn.btn-jumbo:hover {
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+}
+
+a.btn-jumbo {
+  color: #5f6368;
+}
+a.btn-jumbo:hover {
+  color: #222;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -16,8 +39,27 @@ footer {
   bottom: 0;
 }
 
+footer a,
+.header-right i {
+  color: rgba(0,0,0,0.54);
+}
+
 header {
   width: 100%;
+}
+
+p {
+  font-size: 12px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+
+}
+
+.buttons-container {
+  margin: 30px 0;
 }
 
 .clearfix::after {
@@ -62,15 +104,39 @@ header {
   float: right;
 }
 
+.footer-bottom {
+  border-top: 1px solid #e4e4e4;
+}
+
+.footer-bottom li:first-child {
+  padding-left: 0;
+}
+
+.footer-bottom li:last-child {
+  padding-right: 0;
+}
+
 .header-right > ul > li,
 .footer-bottom li {
   display: inline-block;
   padding: 0 5px;
 }
 
-.header-right li a {
+.header-right li a,
+footer a {
   line-height: 50px;
+  font-size: 13px;
 }
+.header-right li  {
+  line-height: 50px;
+  font-size: 16px;
+}
+
+.header-right li a,
+.header-right i:hover {
+  color: rgba(0,0,0,0.87);
+}
+
 
 .header-right > ul {
   position: relative;
@@ -88,6 +154,24 @@ header {
 .jumbo img {
   height: 100px;
   margin: 20px 0;
+}
+
+.search-box {
+  width: 90%;
+  border: none;
+}
+
+.search-container:hover {
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+  border-color: rgba(223,225,229,0);
+}
+
+.search-container {
+  padding: 5px;
+  width: 480px;
+  height: 40px;
+  border: 1px solid #dfe1e5;
+  border-radius: 20px;
 }
 
 /*DELETE?*/
