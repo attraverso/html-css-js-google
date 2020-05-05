@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #f2f2f2;
+  position: fixed;
+  bottom: 0;
+}
+
+header {
+  width: 100%;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 10px;
+  top: 60px;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  width: 250px;
+}
+
+.dropdown.hide {
+  display: none;
+}
+
+.dropdown li {
+  list-style-type: none;
+  text-align: center;
+  padding: 5px;
+}
+
+.float-lx {
+  float: left;
+}
+
+.float-rx {
+  float: right;
+}
+
+.header-right > ul > li,
+.footer-bottom li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.header-right li a {
+  line-height: 50px;
+}
+
+.header-right > ul {
+  position: relative;
+}
+
+.jumbo {
+  width: 60%;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.jumbo img {
+  height: 100px;
+  margin: 20px 0;
+}
+
+/*DELETE?*/
