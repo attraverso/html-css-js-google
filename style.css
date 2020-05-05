@@ -9,24 +9,6 @@ a {
   color: #1A0DAB;
 }
 
-a.btn.btn-jumbo {
-  background-color: #f2f2f2;
-  border: 1px solid #f2f2f2;
-  color:
-}
-
-a.btn.btn-jumbo:hover {
-  background-color: #f8f8f8;
-  border: 1px solid #c6c6c6;
-}
-
-a.btn-jumbo {
-  color: #5f6368;
-}
-a.btn-jumbo:hover {
-  color: #222;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -46,6 +28,7 @@ footer a,
 
 header {
   width: 100%;
+  padding-top: 5px;
 }
 
 p {
@@ -55,11 +38,26 @@ p {
 .btn {
   padding: 10px 15px;
   border-radius: 5px;
+}
 
+.square {
+  color: red;
 }
 
 .buttons-container {
   margin: 30px 0;
+}
+
+.buttons-container a{
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  color: #5f6368;
+}
+
+.buttons-container a:hover {
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  color: #222;
 }
 
 .clearfix::after {
@@ -75,15 +73,16 @@ p {
 
 .dropdown {
   display: flex;
-  justify-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
   position: absolute;
-  right: 10px;
-  top: 60px;
-  flex-wrap: wrap;
-  border: 2px solid black;
-  border-radius: 5px;
+    right: 10px;
+    top: 60px;
   padding: 10px;
   width: 250px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  border-color: rgba(0,0,0,0.2);
+  border-radius: 5px;
 }
 
 .dropdown.hide {
@@ -119,20 +118,29 @@ p {
 .header-right > ul > li,
 .footer-bottom li {
   display: inline-block;
-  padding: 0 5px;
+  padding: 0 8px;
 }
 
-.header-right li a,
-footer a {
-  line-height: 50px;
-  font-size: 13px;
+.header-right > ul > li:last-child {
+  padding-right: 0;
 }
-.header-right li  {
+
+.header-right > ul > li > a  {
   line-height: 50px;
   font-size: 16px;
 }
 
-.header-right li a,
+.header-right > ul > li > a:hover  {
+  text-decoration: underline;
+}
+
+.header-right > ul > li a,
+footer a {
+  line-height: 50px;
+  font-size: 13px;
+}
+
+.header-right > ul > li a:not(.sign-in),
 .header-right i:hover {
   color: rgba(0,0,0,0.87);
 }
@@ -161,17 +169,30 @@ footer a {
   border: none;
 }
 
+.search-container {
+  padding: 10px 5px;
+  width: 60%;
+  height: 45px;
+  border: 1px solid #dfe1e5;
+  border-radius: 25px;
+}
+
 .search-container:hover {
   box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
   border-color: rgba(223,225,229,0);
 }
 
-.search-container {
-  padding: 5px;
-  width: 480px;
-  height: 40px;
-  border: 1px solid #dfe1e5;
-  border-radius: 20px;
+.search-container i {
+  padding: 0 10px;
+  font-size: 14px;
+  color: #9AA0A6;
+}
+
+.sign-in {
+  padding: 7px 12px;
+  background-color: #4386fb;
+  color: #fff;
+  font-weight: 600;
 }
 
 /*DELETE?*/
